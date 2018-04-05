@@ -8,10 +8,10 @@ var board = new five.Board({
 board.on("ready", function () {
 
   // Create a new `button` hardware instance.
-  var buttonGreen = new johnny.Button(6);
+  var buttonGreen = new johnny.Button("P1-15");
   var buttonBlue = new johnny.Button(7);
 
-  var ledGreen = new johnny.Led(8);
+  var ledGreen = new johnny.Led("P1-13");
   var ledBlue = new johnny.Led(9);
 
   var passo = 5;
